@@ -25,7 +25,13 @@ const WeatherApp = () => {
       <div className="weather-temperature">24°C</div>
       <div className="weather-location">Bandung</div>
       <div className="data-container">
-        <div className="element"></div>
+        <div className="element">
+          <img src="" alt="" className="icon" />
+          <div className="data">
+            <div className="humidity-percentage">60%</div>
+            <div className="text"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
