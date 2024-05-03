@@ -27,3 +27,7 @@ Next, start the application by running
 ```console
 npm start
 ```
+
+## Others
+
+![App Screenshot](weather-app/src/components/readme_images/screenshot_01.png)
