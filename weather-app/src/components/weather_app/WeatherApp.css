@@ -6,8 +6,8 @@
   border-radius: 10px;
   background-image: linear-gradient(
     180deg,
-    rgb(90, 90, 199) 0%,
-    rgb(43, 43, 77) 100%
+    rgb(90, 186, 199) 0%,
+    rgb(21, 98, 240) 100%
   );
 }
 
@@ -16,4 +16,27 @@
   justify-content: center;
   gap: 14px;
   padding-top: 60px;
+}
+
+.top-bar input {
+  display: flex;
+  width: 362px;
+  height: 78px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 40px;
+  color: rgb(105, 101, 101);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  background: rgb(255, 255, 255);
 }
