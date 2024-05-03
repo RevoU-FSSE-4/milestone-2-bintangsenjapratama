@@ -3,6 +3,7 @@
   height: 829px;
   margin: auto;
   margin-top: 75px;
+  margin-bottom: 75px;
   border-radius: 10px;
   background-image: linear-gradient(
     180deg,
@@ -39,4 +40,6 @@
   width: 78px;
   height: 78px;
   background: rgb(255, 255, 255);
+  border-radius: 40px;
+  cursor: pointer;
 }
