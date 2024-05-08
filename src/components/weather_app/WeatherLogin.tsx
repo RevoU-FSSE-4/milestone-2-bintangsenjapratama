@@ -15,11 +15,7 @@ export default function WeatherLogin() {
     email: Yup.string()
       .email("Invalid email !!!")
       .required("Email is required to fill"),
-    password: Yup.string()
-      .min(4, "Password is Weak")
-      .matches(/^\S*$/, "No whitespaces allowed")
-      .max(10, "Password is Strong")
-      .required("Password is required"),
+    password: Yup.string().required("Password is required"),
   });
 
   const handleLogin = async (values: { email: string; password: string }) => {

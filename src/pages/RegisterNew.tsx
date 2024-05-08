@@ -13,20 +13,13 @@ export default function WeatherRegisterNew() {
   };
 
   const RegisterScheme = Yup.object().shape({
-    name: Yup.string()
-      .min(4, "Too Short !!!")
-      .max(20, "Too Long !!!")
-      .required("Name is required to fill"),
+    name: Yup.string().required("Name is required to fill"),
 
     email: Yup.string()
       .email("Invalid email !!!")
       .required("Email is required to fill"),
 
-    password: Yup.string()
-      .min(4, "Password is Weak")
-      .matches(/^\S*$/, "No whitespaces allowed")
-      .max(10, "Password is Strong")
-      .required("Password is required to fill"),
+    password: Yup.string().required("Password is required to fill"),
   });
 
   async function HandleRegister(values: any) {
