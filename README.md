@@ -34,7 +34,7 @@ npm start
 
 ## Showcase
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LsJ5vzJDeU4?si=k_aCUUmPHGFqqXph" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://github.com/RevoU-FSSE-4/milestone-2-bintangsenjapratama/assets/18478977/bdea01ab-ca39-4723-9a78-de168d2a5bc0
 
 ## App Screenshots
 
@@ -42,3 +42,7 @@ npm start
 ![Weather App](src/components/readme_images/screenshot_02.png)
 ![Weather App](src/components/readme_images/screenshot_03.png)
 ![Weather App](src/components/readme_images/screenshot_04.png)
+
+
+
+
