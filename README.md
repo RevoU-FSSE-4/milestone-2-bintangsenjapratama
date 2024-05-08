@@ -32,6 +32,10 @@ Next, start the application by running
 npm start
 ```
 
+## Showcase
+
+<iframe width="560" height="315" src="https://youtu.be/LsJ5vzJDeU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## App Screenshots
 
 ![Register and Login Page](src/components/readme_images/screenshot_01.png)
