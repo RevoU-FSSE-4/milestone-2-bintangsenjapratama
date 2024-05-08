@@ -32,6 +32,9 @@ Next, start the application by running
 npm start
 ```
 
-## Others
+## App Screenshots
 
-![App Screenshot](src/components/readme_images/screenshot_01.png)
+![Register and Login Page](src/components/readme_images/screenshot_01.png)
+![Weather App](src/components/readme_images/screenshot_02.png)
+![Weather App](src/components/readme_images/screenshot_03.png)
+![Weather App](src/components/readme_images/screenshot_04.png)
