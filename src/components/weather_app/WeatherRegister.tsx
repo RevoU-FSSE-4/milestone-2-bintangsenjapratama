@@ -15,6 +15,7 @@ export default function WeatherRegister() {
               className="w-40 drop-shadow-2xl"
             />
             <a
+              href=""
               onClick={() => navigate("/RegisterNew")}
               className="text-xl mr-5 text-white font-medium cursor-pointer"
             >
