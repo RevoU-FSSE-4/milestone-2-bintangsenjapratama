@@ -1,15 +1,17 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import WeatherRegisterNew from "./pages/RegisterNew";
+import WeatherApp from "./components/weather_app/WeatherApp";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/RegisterNew" element={<WeatherRegisterNew />} />
+        <Route path="WeatherApp" element={<WeatherApp />} />
+      </Routes>
     </div>
   );
 }

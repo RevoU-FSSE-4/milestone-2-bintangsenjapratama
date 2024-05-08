@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./WeatherApp.css";
 
 import search_icon from "../assets/search.png";
@@ -12,6 +13,8 @@ import humidity_icon from "../assets/humidity.png";
 
 const WeatherApp = () => {
   let api_key = "b963c2def17a0cb0cf469ec9949919fa";
+
+  const navigate = useNavigate();
 
   const [wicon, setWicon] = useState(cloud_icon);
 
@@ -78,6 +81,37 @@ const WeatherApp = () => {
     }
   };
 
+  async function handleLogout(event: any) {
+    event.preventDefault();
+    const options = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    };
+
+    try {
+      const response = await fetch(
+        "https://library-crud-sample.vercel.app/api/user/logout",
+        options
+      );
+      if (!response.ok) {
+        throw new Error("failed to logout");
+      }
+      const result = await response.json();
+      console.log(result.token);
+
+      setTimeout(() => {
+        alert("Logout Success");
+        localStorage.clear();
+        navigate("/");
+      }, 1000);
+    } catch (error) {
+      console.error("Error", error);
+    }
+  }
+
   return (
     <div className="container">
       <div className="top-bar">
@@ -111,6 +145,14 @@ const WeatherApp = () => {
             <div className="text">Wind Speed</div>
           </div>
         </div>
+      </div>
+      <div>
+        <button
+          onClick={handleLogout}
+          className="center-1 top-3 absolute bg-cyan-400 hover:bg-cyan-600 p-2 text-white font-medium"
+        >
+          Logout
+        </button>
       </div>
     </div>
   );

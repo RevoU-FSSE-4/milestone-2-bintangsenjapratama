@@ -2,15 +2,19 @@
 
 ### Project Milestone 2 RevoU FSSE Amsterdam
 
-#### By Bintang Senja
+#### By Bintang S Pratama
 
-[Link]()
+[Link to site](https://weather-app-bintang.netlify.app/)
 
 ## Dependencies
 
-- This project was made with [React](https://react.dev/) and [Typescript](https://www.typescriptlang.org/)
-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- This project uses [npm](https://www.npmjs.com/) to manage libraries, packages, and modules.
+- [React](https://react.dev/) and [Typescript](https://www.typescriptlang.org/)
+- [Create React App](https://github.com/facebook/create-react-app).
+- [npm](https://www.npmjs.com/) to manage libraries, packages, and modules.
+- Vanilla css and [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) to style the app.
+- [react-router](https://reactrouter.com/en/main) to navigate and route different pages.
+- [yup](https://www.npmjs.com/package/yup) to validate inputs.
+- [formik](https://formik.org/) to display forms.
 
 ## Workflow
 
