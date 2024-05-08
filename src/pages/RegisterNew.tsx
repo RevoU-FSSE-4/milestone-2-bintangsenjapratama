@@ -73,11 +73,11 @@ export default function WeatherRegisterNew() {
           onSubmit={HandleRegister}
         >
           <div className="w-96 border border-8 bg-white">
-            <a href="" onClick={() => navigate("/")}>
+            <button onClick={() => navigate("/")}>
               <p className="text-left p-3 text-2xl font-bold text-gray-400 cursor-pointer">
                 ⇐ Back
               </p>
-            </a>
+            </button>
             <div className=" p-1 flex items-center justify-center mt-8 pb-5">
               <img
                 src={weather_text}

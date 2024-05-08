@@ -14,13 +14,12 @@ export default function WeatherRegister() {
               alt="Weather Logo"
               className="w-40 drop-shadow-2xl"
             />
-            <a
-              href=""
+            <button
               onClick={() => navigate("/RegisterNew")}
               className="text-xl mr-5 text-white font-medium cursor-pointer"
             >
               <p className="hover:bg-blue-600">Register Here</p>
-            </a>
+            </button>
           </div>
         </div>
       </div>
