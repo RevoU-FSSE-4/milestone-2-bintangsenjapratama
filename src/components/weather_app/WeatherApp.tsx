@@ -9,7 +9,6 @@ import cloud_icon from "../assets/cloud.png";
 // import snow_icon from "../assets/snow.png";
 import wind_icon from "../assets/wind.png";
 import humidity_icon from "../assets/humidity.png";
-import { isArrowFunction } from "typescript";
 
 const WeatherApp = () => {
   let api_key = "b963c2def17a0cb0cf469ec9949919fa";
@@ -33,9 +32,9 @@ const WeatherApp = () => {
         );
         const location = document.getElementsByClassName("weather-location");
 
-        humidity[0].innerHTML = data.main.humidity;
-        wind[0].innerHTML = data.wind.speed;
-        temperature[0].innerHTML = data.main.temp;
+        humidity[0].innerHTML = data.main.humidity + " %";
+        wind[0].innerHTML = data.wind.speed + " km/h";
+        temperature[0].innerHTML = data.main.temp + "°c";
         location[0].innerHTML = data.name;
       }
     }
